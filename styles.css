@@ -61,14 +61,14 @@ body{
     visibility: hidden;
 }
 .form-control.success input{
-    border-color:green;
+    border-color:rgb(32, 216, 32);
 }
 .form-control.error input{
-    border-color:red;
+    border-color:rgb(243, 87, 87);
 }
 .form-control.success i.fa-check-circle{
     visibility: visible;
-    color:green
+    color:rgb(32, 216, 32);
 }
 .form-control.error i.fa-exclamation-circle{
     visibility: visible;
