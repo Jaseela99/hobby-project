@@ -12,6 +12,7 @@ body{
     min-height: 100vh;
     margin:0;
     font-family:'Open Sans', sans-serif ;
+    font-size:16px;
 }
 .container{
     background-color: white;
@@ -49,7 +50,7 @@ body{
     width:100%;
 }
 .form-control i{
-    visibility: hidden;
+    visibility: hidden;  /* first hidden */
     position:absolute;
     top:38px;
     right:16px;
@@ -58,17 +59,19 @@ body{
     position: absolute;
     bottom:0;
     left:0;
-    visibility: hidden;
+    visibility: hidden;  /* first hidden */
 }
+/* when success is class bordercolor is green */
 .form-control.success input{
     border-color:rgb(32, 216, 32);
-}
-.form-control.error input{
-    border-color:rgb(243, 87, 87);
 }
 .form-control.success i.fa-check-circle{
     visibility: visible;
     color:rgb(32, 216, 32);
+}
+/* when error, border should be red also the error message is visible */
+.form-control.error input{
+    border-color:rgb(243, 87, 87);
 }
 .form-control.error i.fa-exclamation-circle{
     visibility: visible;
